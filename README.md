@@ -1,12 +1,12 @@
-# Athlete Guess – Chrome Extension (Manifest V3)
+# Strava Marathon Connector (Chrome Extension, Manifest V3)
 
-A lightweight Chrome extension quiz that challenges users to guess football players from images.
-Built with vanilla JavaScript + Manifest V3 service worker.
+A lightweight Chrome extension that helps you connect Strava and preview a marathon time prediction based on your recent activities.
 
 ## What it does
-- Shows a random player image
-- Gives multiple-choice answers
-- Tracks score/streak in the popup UI
+- Lets you connect Strava (OAuth)
+- Fetches recent activity data (via backend)
+- Computes an estimated marathon finish time
+- Shows the result in a simple popup UI
 
 ## Install (Developer Mode)
 1. Download or clone this repo
@@ -18,8 +18,9 @@ Built with vanilla JavaScript + Manifest V3 service worker.
 ## Tech
 - Manifest V3
 - Vanilla JavaScript
-- TheSportsDB API
 - Service worker (`sw.js`)
+- Strava OAuth (token flow handled via backend)
+- Backend API (for data fetch + calculation)
 
-## Repo
-This repo is used as part of my portfolio site: https://arvidstenhag.github.io/
+## Portfolio
+Used as part of my portfolio: https://arvidstenhag.github.io/
